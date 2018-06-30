@@ -1,0 +1,13 @@
+/*!
+ * JW Skin Retina for JW6
+ * Copyright 2018 Tan Vu, BeJa
+ * */
+.jw-progress {
+    background-color: #5c2d91;
+} 
+.jw-button-color {
+    color: #5c2d91;
+}
+.jw-controlbar .jw-icon.jw-button-color:hover {
+    color: #653f90;
+}
