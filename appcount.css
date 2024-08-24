@@ -1,0 +1,33 @@
+.form-control:focus{box-shadow: none;}
+
+/* countdown */
+#timer {margin: 10px 0}
+.countdown {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	border: 6px solid #d6f0e0;
+	border-radius: 50%;
+	width: 150px;
+	height: 150px;
+	margin: 25px auto;
+}
+
+.countdown .timer {
+	font-weight: bold;
+	font-size: 60px;
+	line-height: 60px;
+	color: #0d6832;
+}
+
+.countdown .seconds {
+	font-size: 20px;
+	line-height: 26px;
+	font-weight: bold;
+	color: #0d6832;
+}			
+
+/* ads */
+.ads-square{width:300px;height:250px;background:#e2eaf7;color:#2f5aa2;line-height:250px;text-align:center;margin:auto}
+.ads-horizontal{width:100%;height:90px;background:#e2eaf7;color:#2f5aa2;line-height:90px;text-align:center}
