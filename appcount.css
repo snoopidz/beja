@@ -1,5 +1,54 @@
 .form-control:focus{box-shadow: none;}
 
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+body {font-family: Lexend,sans-serif;font-size: 14px;font-weight: 400;background-color: #f6f6fa;}
+.rounded-b {
+    border-top-left-radius: 0!important;
+    border-bottom-left-radius: 0!important;
+}
+.btb {
+    border-radius: 0 5px 5px 0;
+    background: #3949ab;
+    font-family: Lexend,sans-serif;
+    color: #fff;
+    border: 0;
+    padding: 0.375rem;
+    font-weight: 500;
+    outline: none;
+    transition: all .3s;
+	}
+.bts {
+    border-radius: 5px;
+    background: #3949ab;
+    font-family: Lexend,sans-serif;
+    color: #fff;
+    border: 0;
+    padding: 0.375rem;
+    font-weight: 500;
+    outline: none;
+    transition: all .3s;
+
+}	
+.getlink {
+    background: #fff;
+    text-align: center;
+    display: table;
+    overflow: hidden;
+    width: 100%;
+    max-width: 970px;
+    padding: 0 0 25px 0;
+    border-radius: 5px;
+    margin: 25px auto;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 11%), 0 2px 2px rgb(0 0 0 / 11%);
+}
+.info-b {
+    background-color: #E8EAF6;
+}
+.text-b {
+    background: #e2eaf7;
+    color: #2f5aa2;
+}
+
 /* countdown */
 #timer {margin: 10px 0}
 .countdown {
@@ -31,3 +80,15 @@
 /* ads */
 .ads-square{width:300px;height:250px;background:#e2eaf7;color:#2f5aa2;line-height:250px;text-align:center;margin:auto}
 .ads-horizontal{width:100%;height:90px;background:#e2eaf7;color:#2f5aa2;line-height:90px;text-align:center}
+
+/* Adblock */
+.popSc{position:fixed;z-index:99999;top:0;bottom:0;left:0;right:0;padding:20px;background:#f3f5fe;display:flex;justify-content:center;align-items:center}
+.popSc.hidden{display:none}
+.popSc .popBo{position:relative;background:#fff;max-width:400px;display:flex;justify-content:center;align-items:center;flex-direction:column;padding:30px;border-radius:30px}
+.popSc .popBo svg{display:block;width:50px;height:50px;fill:none !important;stroke:#08102b;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5}
+.popSc .popBo h2{margin:10px 0 15px 0;font-size:1.2rem;font-weight:800;color:#08102b}
+.popSc .popBo p{margin:0;line-height:1.7em;font-size:0.9rem;color:#08102b}
+.darkMode .popSc{background:#1f1f1f}
+.darkMode .popSc .popBo{background:#2c2d31}
+.darkMode .popSc .popBo svg{stroke:#fefefe}
+.darkMode .popSc .popBo p, .darkMode .popSc .popBo  h2{color:#fefefe}
