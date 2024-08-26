@@ -81,14 +81,39 @@ body {font-family: Lexend,sans-serif;font-size: 14px;font-weight: 400;background
 .ads-square{width:300px;height:250px;background:#e2eaf7;color:#2f5aa2;line-height:250px;text-align:center;margin:auto}
 .ads-horizontal{width:100%;height:90px;background:#e2eaf7;color:#2f5aa2;line-height:90px;text-align:center}
 
-/* Adblock */
-.popSc{position:fixed;z-index:99999;top:0;bottom:0;left:0;right:0;padding:20px;background:#f3f5fe;display:flex;justify-content:center;align-items:center}
+/* Adblock Pop-Up */
+.popSc{position:fixed;top:0;bottom:0;left:0;right:0;padding:20px;background:rgba(255, 255, 255, 0.1);z-index:99980;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);display:flex;justify-content:center;align-items:center}
 .popSc.hidden{display:none}
-.popSc .popBo{position:relative;background:#fff;max-width:400px;display:flex;justify-content:center;align-items:center;flex-direction:column;padding:30px;border-radius:30px}
+.popSc .popBo{position:relative;background:rgba(255, 255, 255, 0.8);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);max-width:400px;display:flex;justify-content:center;align-items:center;flex-direction:column;padding:30px;border-radius:20px;box-shadow:0 5px 25px rgb(0 0 0 / 20%)}
 .popSc .popBo svg{display:block;width:50px;height:50px;fill:none !important;stroke:#08102b;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5}
 .popSc .popBo h2{margin:10px 0 15px 0;font-size:1.2rem;font-weight:800;color:#08102b}
 .popSc .popBo p{margin:0;line-height:1.7em;font-size:0.9rem;color:#08102b}
-.darkMode .popSc{background:#1f1f1f}
-.darkMode .popSc .popBo{background:#2c2d31}
-.darkMode .popSc .popBo svg{stroke:#fefefe}
-.darkMode .popSc .popBo p, .darkMode .popSc .popBo  h2{color:#fefefe}
+.popSc .popBo .popBtn{display:inline-flex;justify-content:center;align-items:center;height:50px;width:50px;outline:none;border:none;background:#482dff;border-radius:50%;margin-top:20px;transition:all .2s ease;-webkit-transition:all .2s ease}
+.popSc .popBo .popBtn:hover{transform:scale(1.05);-webkit-transform:scale(1.05)}
+.popSc .popBo .popBtn svg{width:24px;height:24px;stroke:#fff;flex-shrink:0}
+.popSc .popBo .popBtn svg.r{animation:rotateIcn 1.5s infinite linear;-webkit-animation:rotateIcn 1.5s infinite linear}
+.popSc{animation:popupBlur .3s ease-in; -webkit-animation:popupBlur .3s}
+.popSc >*{animation:popupScale .3s ease-in; -webkit-animation:popupScale .3s}
+/* Cookies Consent Notice */
+.ckWrap{position:fixed;right:20px;left:20px; margin-bottom: 80px; bottom:-600px;z-index:10;padding:20px;background:rgba(255, 255, 255, 0.8);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-radius:30px 30px;box-shadow:0 -10px 25px -5px rgba(0,0,0,.1);align-items:center;justify-content:center;text-align:left;animation:ckUp 2.5s forwards;animation-delay:1s;-webkit-animation:ckUp 2.5s forwards;-webkit-animation-delay:1s}
+.ckWrap.acptd{animation:ckDn 2.5s backwards;animation-delay:.3s;-webkit-animation:ckDn 2.5s backwards;-webkit-animation-delay:.3s}
+.ckWrap.hidden{display:none}
+.ckCont h2{margin-bottom: 10px; font-size: 1.1rem; font-weight: 700; font-family: var(--fontCo);}
+.ckCont h2::after {content: ''; display: inline-block; vertical-align: middle; width: var(--widgetTa); margin: 0 10px; border-bottom: 1px solid var(--widgetTac); opacity: .5;}
+.ckCont p{margin:10px 0;line-height:1.4rem;color:#08102b;font-size: 14px;font-weight:400;font-family: var(--fontCo);}
+.ckF{margin-top: 15px; display: flex; justify-content: center;}
+.ckB {display: inline-flex; align-items: center; cursor: pointer; padding: 10px 15px; outline: 0; border: 0; border-radius: var(--buttonR); line-height: 20px; color: rgba(0,0,0,.8); background: #e9e9e9; font-size: 14px; font-family: var(--fontB); white-space: nowrap; overflow: hidden;}
+.ckF >*:first-child {margin-right: 10px; border-radius: 8px; background: var(--linkB); color: #fffdfc;}
+.ckF >*:last-child {flex: 0 0 auto; border-radius: 8px;}
+.ckF >* {flex-grow: 1; justify-content: center;}
+@media screen and (min-width:768px){.ckWrap{max-width:400px; left: 20px; right: 20px; margin-bottom:20px; border-radius:10px; bottom:-600px;box-shadow:0 5px 35px rgba(0,0,0,.1);animation:ckdeskUp 2.5s forwards;animation-delay:1s;-webkit-animation:ckdeskUp 2.5s forwards;-webkit-animation-delay:1s}.ckWrap.acptd{animation:ckdeskDn 2.5s backwards;animation-delay:.3s;-webkit-animation:ckdeskDn 2.5s backwards;-webkit-animation-delay:0.3s}}
+@-webkit-keyframes ckUp{100%{bottom:0}}
+@keyframes ckUp{100%{bottom:0}}
+@-webkit-keyframes ckdeskUp{100%{bottom:30px}}
+@keyframes ckdeskUp{100%{bottom:30px}}
+@-webkit-keyframes ckDn{0%{bottom:0}100%{bottom:-600px}}
+@keyframes ckDn{0%{bottom:0}100%{bottom:-600px}}
+@-webkit-keyframes ckdeskDn{0%{bottom:30px}100%{bottom:-600px}}
+@keyframes ckdeskDn{0%{bottom:30px}100%{bottom:-600px}}
+.darkMode .ckWrap{background:rgba(50, 50, 50, 0.8)}
+.darkMode .ckCont h2, .darkMode .ckCont p, .darkMode{color:#fefefe}
