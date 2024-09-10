@@ -118,3 +118,14 @@ body {font-family: Lexend,sans-serif;font-size: 14px;font-weight: 400;background
 @keyframes ckdeskDn{0%{bottom:30px}100%{bottom:-600px}}
 .darkMode .ckWrap{background:rgba(50, 50, 50, 0.8)}
 .darkMode .ckCont h2, .darkMode .ckCont p, .darkMode{color:#fefefe}
+[data-bs-theme=dark] {
+  background-color: #212529 !important;
+  color: #dee2e6;
+}
+
+[data-bs-theme=dark] body { background-color: #212529;color: #dee2e6;}
+[data-bs-theme=dark] .link-dark {color: RGBA(#dee2e6,var(--bs-link-opacity,1))!important;-webkit-text-decoration-color: RGBA(var(--bs-dark-rgb),var(--bs-link-underline-opacity,1))!important;}
+[data-bs-theme=dark] .bg-light {background-color: #212529 !important;}
+[data-bs-theme=dark] .bg-white {background-color: #212529 !important;}
+[data-bs-theme=dark] .bg-black {background-color: #212529 !important;}
+[data-bs-theme=dark] .getlink {background: #1b2024;box-shadow: 0 1px 3px 0 rgb(0 0 0 / 11%), 0 2px 2px rgb(0 137 89);}
