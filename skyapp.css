@@ -161,26 +161,3 @@ body {font-family: Lexend,sans-serif;font-size: 14px;font-weight: 400;background
  .badge-light[href]:focus,.badge-light[href]:hover{color:#111;text-decoration:none;background-color:#dae0e5}
  .badge-dark{color:#fff;background-color:#59316b}
  .badge-dark[href]:focus,.badge-dark[href]:hover{color:#fff;text-decoration:none;background-color:#3c2148}
- .jumbotron{padding:2rem calc(2rem * 0.5);margin-bottom:2rem;background-color:#e9ecef;border-radius:.3rem}
- @media(min-width: 576px){.jumbotron{padding:calc(2rem * 2) 2rem}}
- .jumbotron-fluid{padding-right:0;padding-left:0;border-radius:0}
- .alert{position:relative;padding:.75rem 1.25rem;margin-bottom:1rem;border:1px solid rgba(0,0,0,0);border-radius:.25rem}
- .alert-heading{color:inherit}.alert-link{font-weight:700}
- .alert-dismissible .close{position:absolute;top:0;right:0;padding:.75rem 1.25rem;color:inherit}
- .alert-primary{color:#41244f;background-color:#e5daea;border-color:#dbcbe2}
- .alert-primary hr{border-top-color:#d0bbd9}.alert-primary .alert-link{color:#24142c}
- .alert-secondary{color:#1b1e22;background-color:#d6d8d9;border-color:#c6c8ca}
- .alert-secondary hr{border-top-color:#b9bbbe}.alert-secondary .alert-link{color:#040506}
- .alert-success{color:#365c19;background-color:#e1efd6;border-color:#d5e9c5}
- .alert-success hr{border-top-color:#c8e2b3}
- .alert-success .alert-link{color:#1e340e}
- .alert-info{color:#005661;background-color:#ccedf1;border-color:#b8e6ec}
- .alert-info hr{border-top-color:#a4dfe7}.alert-info .alert-link{color:#00292e}
- .alert-warning{color:#856300;background-color:#fff2cc;border-color:#ffedb8}
- .alert-warning hr{border-top-color:#ffe79f}.alert-warning .alert-link{color:#523d00}
- .alert-danger{color:#7c1320;background-color:#fcd3d8;border-color:#fbc2c9}
- .alert-danger hr{border-top-color:#f9aab4}.alert-danger .alert-link{color:#500c15}
- .alert-light{color:#818182;background-color:#fefefe;border-color:#fdfdfe}.alert-light hr{border-top-color:#ececf6}
- .alert-light .alert-link{color:#686868}.alert-dark{color:#2e1938;background-color:#ded6e1;border-color:#d1c5d6}
- .alert-dark hr{border-top-color:#c5b6cb}
- .alert-dark .alert-link{color:#110915}
