@@ -139,6 +139,8 @@ body {font-family: Lexend,sans-serif;font-size: 14px;font-weight: 400;background
 [data-bs-theme=dark] .bg-white {background-color: #212529 !important;}
 [data-bs-theme=dark] .bg-black {background-color: #212529 !important;}
 [data-bs-theme=dark] .getlink {background: #1b2024;box-shadow: 0 1px 3px 0 rgb(0 0 0 / 11%), 0 2px 2px rgb(0 137 89);}
+[data-bs-theme=dark] .ckWrap {background-color: #252b31 !important}
+[data-bs-theme=dark] .ckCont p {color: #7d4698 !important}
 #toTop{position: fixed;bottom: 10px;right: 10px;cursor: pointer;display: none;background: #e2eaf7;color: #2f5aa2;border: none;}
 
  a{color:#7d4698;text-decoration:none;background-color:rgba(0,0,0,0);-webkit-text-decoration-skip:objects}
