@@ -72,7 +72,6 @@ body {font-family: Lexend,sans-serif;font-size: 14px;font-weight: 400;background
 #toTop{position: fixed;bottom: 10px;right: 10px;cursor: pointer;display: none;background: #e2eaf7;color: #2f5aa2;border: none;}
 /* A Link Color*/
  a{color:#7d4698;text-decoration:none;background-color:rgba(0,0,0,0);-webkit-text-decoration-skip:objects}
- a:hover{color:#522e64;text-decoration:underline}
  /* Short CODE  */
  .badge{display:inline-block;padding:.25em .4em;font-size:75%;font-weight:700;line-height:1;text-align:center;white-space:nowrap;vertical-align:baseline;border-radius:.25rem}
  .badge:empty{display:none}.btn .badge{position:relative;top:-1px}
