@@ -64,7 +64,7 @@ body {font-family: Lexend,sans-serif;font-size: 14px;font-weight: 400;background
 [data-bs-theme=dark] .bg-white {background-color: #212529 !important;}
 [data-bs-theme=dark] .bg-black {background-color: #212529 !important;}
 [data-bs-theme=dark] .getlink {background: #1b2024;box-shadow: 0 1px 3px 0 rgb(0 0 0 / 11%), 0 2px 2px rgb(0 137 89);}
-[data-bs-theme=dark] .ckWrap {background-color: #252b3169 !important}
+[data-bs-theme=dark] .ckWrap {background-color: #252b3169}
 [data-bs-theme=dark] .ckCont p {color: #a5a3a7 !important}
 [data-bs-theme=dark] .ckF >*:first-child {background: #7d4698;}
 [data-bs-theme=dark] .form-control {background-color: rgb(25 135 84 / 37%);}
