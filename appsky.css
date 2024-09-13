@@ -1,86 +1,22 @@
 .form-control:focus{box-shadow: none;}
-
+/* font google*/
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+/* Body*/
 body {font-family: Lexend,sans-serif;font-size: 14px;font-weight: 400;background-color: #f6f6fa;}
-.rounded-b {
-    border-top-left-radius: 0!important;
-    border-bottom-left-radius: 0!important;
-}
-.btb {
-    border-radius: 0 5px 5px 0;
-    background: #3949ab;
-    font-family: Lexend,sans-serif;
-    color: #fff;
-    border: 0;
-    padding: 0.375rem;
-    font-weight: 500;
-    outline: none;
-    transition: all .3s;
-	}
-.bts {
-    border-radius: 5px;
-    background: #3949ab;
-    font-family: Lexend,sans-serif;
-    color: #fff;
-    border: 0;
-    padding: 0.375rem;
-    font-weight: 500;
-    outline: none;
-    transition: all .3s;
-
-}	
-.getlink {
-    background: #fff;
-    text-align: center;
-    display: table;
-    overflow: hidden;
-    width: 100%;
-    max-width: 970px;
-    padding: 0 0 25px 0;
-    border-radius: 5px;
-    margin: 25px auto;
-    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 11%), 0 2px 2px rgb(0 0 0 / 11%);
-}
-.info-b {
-    background-color: #E8EAF6;
-}
-.text-b {
-    background: #e2eaf7;
-    color: #2f5aa2;
-}
-
+.rounded-b {border-top-left-radius: 0!important;border-bottom-left-radius: 0!important;}
+.btb {border-radius: 0 5px 5px 0;background: #3949ab;font-family: Lexend,sans-serif;color: #fff;border: 0;padding: 0.375rem;font-weight: 500;outline: none;transition: all .3s;}
+.bts {border-radius: 5px;background: #3949ab;font-family: Lexend,sans-serif;color: #fff;border: 0;padding: 0.375rem;font-weight: 500;outline: none;transition: all .3s;}	
+.getlink {background: #fff;text-align: center; display: table;overflow: hidden;width: 100%;max-width: 970px;padding: 0 0 25px 0;border-radius: 5px;margin: 25px auto;box-shadow: 0 1px 3px 0 rgb(0 0 0 / 11%), 0 2px 2px rgb(0 0 0 / 11%);}
+.info-b {background-color: #E8EAF6;}
+.text-b { background: #e2eaf7;color: #2f5aa2;}
 /* countdown */
 #timer {margin: 10px 0}
-.countdown {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	text-align: center;
-	border: 6px solid #d6f0e0;
-	border-radius: 50%;
-	width: 150px;
-	height: 150px;
-	margin: 25px auto;
-}
-
-.countdown .timer {
-	font-weight: bold;
-	font-size: 60px;
-	line-height: 60px;
-	color: #0d6832;
-}
-
-.countdown .seconds {
-	font-size: 20px;
-	line-height: 26px;
-	font-weight: bold;
-	color: #0d6832;
-}			
-
+.countdown {display: flex;flex-direction: column;justify-content: center;text-align: center;border: 6px solid #d6f0e0;border-radius: 50%;width: 150px;height: 150px;margin: 25px auto;}
+.countdown .timer {font-weight: bold;font-size: 60px;line-height: 60px;color: #0d6832;}
+.countdown .seconds {font-size: 20px;line-height: 26px;font-weight: bold;color: #0d6832;}			
 /* ads */
 .ads-square{width:300px;height:250px;background:#e2eaf7;color:#2f5aa2;line-height:250px;text-align:center;margin:auto}
 .ads-horizontal{width:100%;height:90px;background:#e2eaf7;color:#2f5aa2;line-height:90px;text-align:center}
-
 /* Adblock Pop-Up */
 .popSc{position:fixed;top:0;bottom:0;left:0;right:0;padding:20px;background:rgba(255, 255, 255, 0.1);z-index:99980;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);display:flex;justify-content:center;align-items:center}
 .popSc.hidden{display:none}
@@ -94,7 +30,6 @@ body {font-family: Lexend,sans-serif;font-size: 14px;font-weight: 400;background
 .popSc .popBo .popBtn svg.r{animation:rotateIcn 1.5s infinite linear;-webkit-animation:rotateIcn 1.5s infinite linear}
 .popSc{animation:popupBlur .3s ease-in; -webkit-animation:popupBlur .3s}
 .popSc >*{animation:popupScale .3s ease-in; -webkit-animation:popupScale .3s}
-
 /* Cookies Consent Notice */
 .ckWrap{position:fixed;right:20px;left:20px; margin-bottom: 80px; bottom:-600px;z-index:10;padding:20px;background:rgba(255, 255, 255, 0.8);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-radius:30px 30px;box-shadow:0 -10px 25px -5px rgba(0,0,0,.1);align-items:center;justify-content:center;text-align:left;animation:ckUp 2.5s forwards;animation-delay:1s;-webkit-animation:ckUp 2.5s forwards;-webkit-animation-delay:1s}
 .ckWrap.acptd{animation:ckDn 2.5s backwards;animation-delay:.3s;-webkit-animation:ckDn 2.5s backwards;-webkit-animation-delay:.3s}
@@ -118,36 +53,27 @@ body {font-family: Lexend,sans-serif;font-size: 14px;font-weight: 400;background
 @keyframes ckdeskDn{0%{bottom:30px}100%{bottom:-600px}}
 .darkMode .ckWrap{background:rgba(50, 50, 50, 0.8)}
 .darkMode .ckCont h2, .darkMode .ckCont p, .darkMode{color:#fefefe}
-[data-bs-theme=dark] {
-  background-color: #212529 !important;
-  color: #dee2e6;
-}
-.form-check-input:checked {
-    background-color: #0c5ba2;
-    border-color: #0c5ba2;
-    box-shadow: none;
-}
-.form-check-input:focus {
-    border-color: #86b7fe;
-    outline: 0;
-    box-shadow: none;
-}
+/* Dark Theme Setting */
+[data-bs-theme=dark] {background-color: #212529 !important;color: #dee2e6;}
+.form-check-input:checked {background-color: #0c5ba2;border-color: #0c5ba2;box-shadow: none;}
+.form-check-input:focus {border-color: #86b7fe;outline: 0;box-shadow: none}
 [data-bs-theme=dark] {background-color: #212529 !important;color: #dee2e6;}
 [data-bs-theme=dark] body {background-color: #212529;color: #dee2e6;}
 [data-bs-theme=dark] .link-dark {color: RGBA(#dee2e6,var(--bs-link-opacity,1))!important;-webkit-text-decoration-color: RGBA(var(--bs-dark-rgb),var(--bs-link-underline-opacity,1))!important;}
-[data-bs-theme=dark] .bg-light {background-color: #212529 !important;}
+[data-bs-theme=dark] .bg-light {background-color: #712cf9 !important;box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15), inset 0 -1px 0 rgba(255, 255, 255, 0.15);}
 [data-bs-theme=dark] .bg-white {background-color: #212529 !important;}
 [data-bs-theme=dark] .bg-black {background-color: #212529 !important;}
 [data-bs-theme=dark] .getlink {background: #1b2024;box-shadow: 0 1px 3px 0 rgb(0 0 0 / 11%), 0 2px 2px rgb(0 137 89);}
-[data-bs-theme=dark] .ckWrap {background-color: #252b31 !important}
-[data-bs-theme=dark] .ckCont p {color: #7d4698 !important}
+[data-bs-theme=dark] .ckWrap {background-color: #252b3169 !important}
+[data-bs-theme=dark] .ckCont p {color: #a5a3a7 !important}
+[data-bs-theme=dark] .ckF >*:first-child {background: #7d4698;}
+[data-bs-theme=dark] .form-control {background-color: rgb(25 135 84 / 37%);}
+/* Back To Top*/
 #toTop{position: fixed;bottom: 10px;right: 10px;cursor: pointer;display: none;background: #e2eaf7;color: #2f5aa2;border: none;}
-
+/* A Link Color*/
  a{color:#7d4698;text-decoration:none;background-color:rgba(0,0,0,0);-webkit-text-decoration-skip:objects}
  a:hover{color:#522e64;text-decoration:underline}
- a:not([href]):not([tabindex]){color:inherit;text-decoration:none}
- a:not([href]):not([tabindex]):focus,a:not([href]):not([tabindex]):hover{color:inherit;text-decoration:none}
- a:not([href]):not([tabindex]):focus{outline:0}
+ /* Short CODE  */
  .badge{display:inline-block;padding:.25em .4em;font-size:75%;font-weight:700;line-height:1;text-align:center;white-space:nowrap;vertical-align:baseline;border-radius:.25rem}
  .badge:empty{display:none}.btn .badge{position:relative;top:-1px}
  .badge-pill{padding-right:.6em;padding-left:.6em;border-radius:10rem}
