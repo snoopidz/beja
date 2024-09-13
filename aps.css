@@ -68,8 +68,13 @@ body {font-family: Lexend,sans-serif;font-size: 14px;font-weight: 400;background
 [data-bs-theme=dark] .ckCont p {color: #a5a3a7 !important}
 [data-bs-theme=dark] .ckF >*:first-child {background: #7d4698;}
 [data-bs-theme=dark] .form-control {background-color: rgb(25 135 84 / 37%);}
+[data-bs-theme=dark] .ads-horizontal {background-color: rgb(45 38 72);border: 1px solid #42287d;}
+[data-bs-theme=dark] .ads-square {background-color: rgb(45 38 72);border: 1px solid #42287d;}
+
 /* Back To Top*/
 #toTop{position: fixed;bottom: 10px;right: 10px;cursor: pointer;display: none;background: #e2eaf7;color: #2f5aa2;border: none;}
+[data-bs-theme=dark] #toTop {background-color: rgb(45 38 72);border: 1px solid #42287d;}
+
 /* A Link Color*/
  a{color:#7d4698;text-decoration:none;background-color:rgba(0,0,0,0);-webkit-text-decoration-skip:objects}
  /* Short CODE  */
